@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*==============================================================*/
+/*====RELOJ====================================================*/
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.relojYadvice {
+	width: 30%;
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(255, 157, 0, 0.259);
+	-webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+	border-radius: 40px;
+	padding: 20px;
+
+}
+
+.clock {
+	color: rgba(66, 231, 215, 0.614);
+
+	text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4, 2px 1px 1px #5dabcd, 2px 3px 2px #378ab4, 3px 2px 2px #5dabcd, 3px 4px 2px #378ab4, 4px 3px 3px #5dabcd, 4px 5px 3px #378ab4, 5px 4px 2px #5dabcd, 5px 6px 2px #378ab4, 6px 5px 2px #5dabcd, 6px 7px 1px #378ab4, 7px 6px 1px #5dabcd, 7px 8px 0px #378ab4, 8px 7px 0px #5dabcd;
+	/*-----------------------*/
+	display: flex;
+	font-size: 50px;
+
+}
+
+.advice {
+	font-size: 20px;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 29px;
+	letter-spacing: 2.2px;
+	word-spacing: -1.6px;
+	color: #000000;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: italic;
+	font-variant: normal;
+	text-transform: none;
+}
+
+/*=========================================================================================================================*/
+/*============WALLPAPERS====================================================================================================*/
+
+body {
+	background-image: url(./assets/toy.jpg);
+	background-size: cover;
+	transition: 1s linear
+}
+
+/*=====================================================================================================================*/
+/*=========PASSWORD======================================================================================================*/
+
+.passwordContainer {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border: #000000 2px solid;
+	border-radius: 100px;
+	gap: 20px;
+	background-color: rgba(39, 2, 47, 0.407);
+	box-shadow: 0px 0px 41px 6px rgba(57, 2, 72, 0.767);
+}
+
+.divPasswordGenerator {
+	font-size: 30px;
+	color: #8E5CFF;
+	text-shadow: 1px -2px 7px #c800ff;
+}
+
+form {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+
+#passLength {
+	padding: 5px;
+	font-size: 16px;
+	border-width: 3px;
+	border-color: #FFFFFF;
+	background-color: #FFFFFF;
+	color: #2300ff;
+	border-style: hidden;
+	border-radius: 0px;
+	box-shadow: 0px 0px 22px rgba(147, 0, 255, .39);
+	text-shadow: 0px 0px 21px rgba(79, 0, 255, .50);
+	text-align: center;
+
+
+}
+
+.btnPass {
+	font-family: Bebas Neue;
+	font-weight: 100;
+	font-size: 23px;
+	color: #6c7fdf;
+	background: linear-gradient(90deg, #0066cc60 0%, #970ae33f 100%);
+	padding: 10px 30px;
+	border: 2px solid #9fc8f2;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	border-radius: 50px;
+	transition: 931ms;
+	transform: translateY(0);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+
+.btnPass:hover {
+	transition: 931ms;
+	padding: 10px 24px;
+	transform: translateY(-22px);
+	background: linear-gradient(90deg, #0066cc60 0%, #970ae33f 100%);
+	color: #00b4d8;
+	border: solid 2px #ffffffe5;
+}
+
+.password {
+	background-color: rgba(18, 18, 18, 0.814);
+	color: rgba(255, 3, 3, 0.933);
+	border: yellow 2px dashed;
+	height: min-content;
+	padding: 10px;
+}
+/*==================================================================================================================*/
+/*===================LINKS=========================================================================================*/
+.prueba{
+	width: 20px;
+	height: 20px;
+	background-color: #2300ff;
+}

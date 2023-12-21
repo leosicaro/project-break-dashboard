@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="./pages/clock.html">CLOCK</a>
+        <a href="./pages/password.html">PASS</a>
+        <a href="./pages/weather.html">weather</a>
+        <a href="./index.html">HOME</a>
+    </nav>
+    <div class="apps">
+        <div class="appclock">
+            <div class="relojYadvice">
+                <div class="clock">
+                    <div class="horas">00</div>
+                    <div class="minutos">00</div>
+                    <div class="segundos">00</div>
+                </div>
+                <div>
+                    <div class="advice">advice</div>
+                </div>
+            </div>
+        </div>
+        <div class="PasswordGenerator">
+            <div class="passwordContainer">
+                <div class="divPasswordGenerator">Password Generator</div>
+                <form action="">
+                    <label for="selectLenght"></label>
+                    <input id="passLength" type="number" max="50" min="1">
+                    <button class="btnPass">Create</button>
+                </form>
+            </div>
+            <div class="password"> </button></div>
+        </div>
+    </div>
+    
+<script src="./scripts/clock.js"></script>
+<script src="./scripts/links.js"></script>
+<script src="./scripts/wallpapers.js"></script>
+<script src="./scripts/password.js"></script>
+<script src="./scripts/weather.js"></script>
+</body>
+</html>
