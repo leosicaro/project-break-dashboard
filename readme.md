@@ -22,7 +22,6 @@ Es un ejemplo de como lo puedes hacer pero puedes dar rienda suelta tu imaginaci
 Una vez tengas el proyecto finalizado, también puede ser antes, lo subiras a github pages para poder verlo en internet. Para poder subir nuestro proyecto a github pages previamente lo tendremos que tener en nuestro repositorio. Una vez ahí iremos a `settings` (está en el menú de cabecera) y dentro aparecerá en el menú lateral `pages`. Clicka y al entrar solo tienes que seleccionar la `branch`(rama) `main`. Y pulsaremos `SAVE`.
 Esperaremos un par de minutos, refrescaremos esa página y nos dará una URL. Ahí podras ver tu proyecto en internet.
 
-
 Vamos a ver que hay que hacer en cada uno de los proyectos: 
 
 ## Reloj digital 24h + Fecha:
