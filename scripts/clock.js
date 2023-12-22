@@ -17,9 +17,9 @@ const actualizarHora = () => {
     let minutos = zeros(time.getMinutes());
     let segundos = zeros(time.getSeconds());
 
-    hora.textContent = ` ${horas} `
-    minuto.textContent = `: ${minutos} `
-    segundo.textContent = `: ${segundos}`
+    hora.textContent = `${horas} `
+    minuto.textContent = `:${minutos} `
+    segundo.textContent = `:${segundos}`
 }
 actualizarHora()
 setInterval(actualizarHora, 1000)

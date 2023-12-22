@@ -1,13 +1,13 @@
-const arlo = `".././assets/arlo.jpeg"`
-const brave =".././assets/brave.jpeg"
-const buzz =".././assets/buzz.jpeg"
-const coco =".././assets/coco.jpeg"
-const inside =".././assets/inside.jpeg"
-const monst =".././assets/monst.jpeg"
-const nemo =".././assets/nemo.jpeg"
-const cars =".././assets/radiator.jpg"
-const toy =".././assets/toy.jpg"
-const up =".././assets/up.jpg"
+const arlo = `"/assets/arlo.jpeg"`
+const brave ="/assets/brave.jpeg"
+const buzz ="/assets/buzz.jpeg"
+const coco ="/assets/coco.jpeg"
+const inside ="/assets/inside.jpeg"
+const monst ="/assets/monst.jpeg"
+const nemo ="/assets/nemo.jpeg"
+const cars ="/assets/radiator.jpg"
+const toy ="/assets/toy.jpg"
+const up ="/assets/up.jpg"
 
 
 
@@ -26,7 +26,7 @@ let randomWall =  ()=>{
   
 
 
- setInterval(randomWall,15000)
+ setInterval(randomWall,10000)
 
 
 
