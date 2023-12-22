@@ -29,7 +29,7 @@ const passCreator = () => {
 }
 
 function copyText() {
-    navigator.clipboard.writeText(contraseña.textContent)
+    navigator.clipboard.writeText(`${password}`)
 }
 
 btn.addEventListener("click", (e) => {

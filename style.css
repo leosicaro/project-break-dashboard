@@ -135,20 +135,57 @@ table {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	align-items: center;
+	gap: 30px;
+	
 }
 .apps{
 	display: flex;
 	justify-content: space-evenly;
 	gap: 30px;
 }
+nav {
+background-color: #8dd4e285;
+display: flex;
+width: min-content;
+border-radius: 50px;
+padding: 20px;
+}
+@media screen and (max-width: 768px ){
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		min-width: 100vh;
+	}
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 10px;
+	}
+	svg{
+		width: 40px;
+	}
+	.advice {
+		font-size: 2px;
+		
+	}
+	}
+
+	
+
 /*==============================================================*/
 /*====RELOJ====================================================*/
 
-body {
+.sub {
 	height: 100vh;
 	display: flex;
+	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
+	gap: 20px;
 }
 
 .relojYadvice {
@@ -181,7 +218,6 @@ body {
 	font-size: 20px;
 	text-align: center;
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 29px;
 	letter-spacing: 2.2px;
 	word-spacing: -1.6px;
 	color: #000000;
@@ -197,8 +233,9 @@ body {
 
 body {
 	background-image: url(./assets/toy.jpg);
+	background-size: 100%;
+	transition: 1s linear;
 	background-size: cover;
-	transition: 1s linear
 }
 
 /*=====================================================================================================================*/
@@ -223,7 +260,7 @@ body {
 	text-shadow: 1px -2px 7px #c800ff;
 }
 
-form {
+.formPass {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 10px;
@@ -274,8 +311,8 @@ form {
 	background-color: rgba(18, 18, 18, 0.814);
 	color: rgba(255, 3, 3, 0.933);
 	border: yellow 2px dashed;
-	height: min-content;
 	padding: 10px;
+	
 }
 /*==================================================================================================================*/
 /*===================LINKS=========================================================================================*/
@@ -286,3 +323,49 @@ form {
 }
 /*===================================================================================================================*/
 /*================nav================================================================================================*/
+/*===================================================================================================================*/
+/*================MEDIAQUERY================================================================================================*/
+@media screen and (max-width: 768px ){
+	body {
+		width: 100vh;
+		margin-left: -15%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100vh;
+	}
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 10px;
+	}
+	svg{
+		width: 40px;
+	}
+	.advice {
+		font-size: 10px;
+	}
+	.passwordContainer{
+		width: min-content;
+	}
+	.btnPass:hover {
+		transition: 931ms;
+		padding: 10px 24px;
+		transform: scale(1);
+		background: linear-gradient(90deg, #0066cc60 0%, #970ae33f 100%);
+		color: #00b4d8;
+		border: solid 2px #ffffffe5;
+	}
+	.password {
+		background-color: rgba(16, 141, 135, 0.705);
+		color: rgb(255, 3, 3);
+		border: rgba(255, 255, 0, 0) 2px dashed;
+		width: min-content;
+		padding: 0px;
+	}
+
+	}
+
+	

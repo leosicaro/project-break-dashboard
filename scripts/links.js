@@ -4,19 +4,20 @@ let formulario = document.querySelector(".formulario")
 let reset = document.querySelector(".reset")
 let container = document.querySelector(".linksContainer")
 
-let borrarLink = ()=>{
- console.log("hola")
+function printLinks() {
+
+    let link = {
+        title: inputName.value,
+        url: `https://${inputUrl.value}`
+    };
+
+    let links = JSON.parse(localStorage.getItem('links')) || [];
+    links.push(link);
+    localStorage.setItem('links', JSON.stringify(links));
+
+    mostrarEnlaces(links);
+
 }
-
-
-
-const printLinks = () => {
-    let li = document.createElement("li")
-    li.innerHTML = `<a href="https://${inputUrl.value}"target= blank class="link">${inputName.value}</a> <button onclick="borrarLink()">X</button> `
-    container.appendChild(li)
-
-}
-
 formulario.addEventListener("submit", (e) => {
     e.preventDefault()
     if (!(inputUrl.value.includes("."))) {
@@ -24,5 +25,42 @@ formulario.addEventListener("submit", (e) => {
     } else {
         printLinks()
     }
-    console.log("hola")
+
 })
+function mostrarEnlaces(links) {
+
+    container.innerHTML = '';
+
+    links.forEach(function (link, i) {
+        let linkItem = document.createElement('div');
+        linkItem.className = 'linkItem';
+
+        let linkElement = document.createElement('a');
+        linkElement.href = link.url;
+        linkElement.textContent = link.title;
+        linkItem.appendChild(linkElement);
+
+        deleteButton = document.createElement('button');
+        deleteButton.className = 'deleteButton';
+        deleteButton.textContent = 'Eliminar';
+        deleteButton.onclick =  ()=> {
+            eliminarLink(i);
+        };
+        linkItem.appendChild(deleteButton);
+
+        container.appendChild(linkItem);
+    });
+}
+
+const eliminarLink = (i)=> {
+    let links = JSON.parse(localStorage.getItem('links')) || [];
+    links.splice(i, 1);
+    localStorage.setItem('links', JSON.stringify(links));
+    mostrarEnlaces(links);
+}
+
+const cargarLinks = () =>{
+    let links = JSON.parse(localStorage.getItem('links')) || [];
+    mostrarEnlaces(links);
+}
+document.addEventListener('DOMContentLoaded', cargarLinks);

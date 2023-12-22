@@ -5,14 +5,14 @@ const coco = "/assets/coco.jpeg"
 const inside = "/assets/inside.jpeg"
 const monst = "/assets/monst.jpeg"
 const nemo = "/assets/nemo.jpeg"
-const cars = "/assets/radiator.jpg"
+const luca = "/assets/luca.jpg"
 const toy = "/assets/toy.jpg"
 const up = "/assets/up.jpg"
 
 
-console.log(document.body.className)
 
-const walls = [arlo, brave, buzz, coco, inside, monst, nemo, cars, toy, up]
+
+const walls = [arlo, brave, buzz, coco, inside, monst, nemo, luca, toy, up]
 
 
 let randomWall = () => {
@@ -26,9 +26,9 @@ let randomWall = () => {
         document.body.style.backgroundImage = `url(.${wall})`;
     }
 }
+
+
 randomWall()
-
-
 
 
 setInterval(randomWall, 10000)
