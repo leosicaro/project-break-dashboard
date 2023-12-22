@@ -129,6 +129,18 @@ table {
 	border-spacing: 0;
 }
 
+/*===================================================================================================================*/
+/*================MAIN================================================================================================*/
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.apps{
+	display: flex;
+	justify-content: space-evenly;
+	gap: 30px;
+}
 /*==============================================================*/
 /*====RELOJ====================================================*/
 
@@ -219,13 +231,11 @@ form {
 
 #passLength {
 	padding: 5px;
-	font-size: 16px;
-	border-width: 3px;
-	border-color: #FFFFFF;
-	background-color: #FFFFFF;
+	font-size: 20px;
+	background-color: #9ecede;
 	color: #2300ff;
-	border-style: hidden;
-	border-radius: 0px;
+	
+	border-radius: 20px;
 	box-shadow: 0px 0px 22px rgba(147, 0, 255, .39);
 	text-shadow: 0px 0px 21px rgba(79, 0, 255, .50);
 	text-align: center;
@@ -274,3 +284,5 @@ form {
 	height: 20px;
 	background-color: #2300ff;
 }
+/*===================================================================================================================*/
+/*================nav================================================================================================*/
