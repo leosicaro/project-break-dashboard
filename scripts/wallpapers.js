@@ -9,11 +9,7 @@ const luca = "/assets/luca.jpg"
 const toy = "/assets/toy.jpg"
 const up = "/assets/up.jpg"
 
-
-
-
 const walls = [arlo, brave, buzz, coco, inside, monst, nemo, luca, toy, up]
-
 
 let randomWall = () => {
     if (document.body.className == "sub") {
@@ -26,11 +22,7 @@ let randomWall = () => {
         document.body.style.backgroundImage = `url(.${wall})`;
     }
 }
-
-
 randomWall()
-
-
 setInterval(randomWall, 10000)
 
 

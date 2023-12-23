@@ -322,7 +322,66 @@ body {
 	background-color: #2300ff;
 }
 /*===================================================================================================================*/
-/*================nav================================================================================================*/
+/*================WEATHER================================================================================================*/
+.weather{
+	background-color:  rgba(7, 237, 218, 0.474);
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	margin: auto;
+	
+}
+.principal{
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 50px;
+}
+.cityYimg{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.temperatura{
+	font-size: 40px;
+}
+
+.clima{
+	scale: 2;
+}
+
+.secundarios{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+ .precipitacion, .humedad , .viento{
+	font-size: 20px;
+	
+ }
+.predict{
+	display: flex;
+	overflow-x: scroll;
+	
+}
+.hourItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.predict::-webkit-scrollbar {
+    width: 0.2px;     /* Tamaño del scroll en vertical */
+    height: 0.2px;    /* Tamaño del scroll en horizontal */
+    display: none;  /* Ocultar scroll */
+}
+
+.hourItem img{
+	width: 50px;
+}
+
+
 /*===================================================================================================================*/
 /*================MEDIAQUERY================================================================================================*/
 @media screen and (max-width: 768px ){

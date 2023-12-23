@@ -31,7 +31,7 @@ function mostrarEnlaces(links) {
 
     container.innerHTML = '';
 
-    links.forEach(function (link, i) {
+    links.forEach((link, i) =>{
         let linkItem = document.createElement('div');
         linkItem.className = 'linkItem';
 
